@@ -1161,12 +1161,12 @@
 
                   </div>
 
-                  <!-- Thanh Dock 4 app quen thuộc -->
+                  <!-- Thanh Dock 4 app quen thuộc (Có Zalo trực tiếp) -->
                   <div class="ios-dock">
-                    <div class="dock-app" style="background: #22c55e;" onclick="openApp('app-msg')">📞</div>
-                    <div class="dock-app" style="background: #0284c7;" onclick="window.location.href='#projects'">🧭</div>
-                    <div class="dock-app" style="background: #10b981;" onclick="openApp('app-msg')">💬</div>
-                    <div class="dock-app" style="background: #ec4899;" onclick="openApp('app-music')">🎵</div>
+                    <a href="https://zalo.me/0365291468" target="_blank" rel="noopener noreferrer" class="dock-app" style="background: #0068ff; text-decoration: none; font-size: 0.72rem; font-weight: 800; color: #fff;" title="Chat Zalo trực tiếp với Vũ">Zalo</a>
+                    <a href="tel:0365291468" class="dock-app" style="background: #22c55e; text-decoration: none;" title="Gọi điện cho Vũ (0365291468)">📞</a>
+                    <div class="dock-app" style="background: #10b981;" onclick="openApp('app-msg')" title="Nhắn tin qua iPhone ảo">💬</div>
+                    <div class="dock-app" style="background: #ec4899;" onclick="openApp('app-music')" title="Nghe nhạc Lo-fi">🎵</div>
                   </div>
 
                 </div>
@@ -1845,11 +1845,19 @@
         const indicator = document.getElementById('typingIndicator');
         if (indicator) indicator.remove();
 
-        const lower = text.toLowerCase().trim();
-        let reply = "";
+        const toxicKeywords = [
+          "đm", "đmm", "dm", "dmm", "vcl", "vcll", "clgt", "đcm", "dcm", "địt", "dit", "lồn", "lon",
+          "buồi", "buoi", "cặc", "cac", "óc chó", "mẹ mày", "con mẹ", "đĩ", "cave",
+          "fuck", "bitch", "shit", "asshole", "bastard", "dick", "pussy", "cút", "biến đi", "đéo"
+        ];
+        const isToxic = toxicKeywords.some(bad => lower.includes(bad));
 
+        // Nhóm 0: Phát hiện từ ngữ tục tĩu, phản cảm ➔ Phản hồi văn minh, chuẩn mực UET
+        if (isToxic) {
+          reply = "Vũ luôn hoan nghênh những cuộc trao đổi văn minh, mang tính xây dựng và tôn trọng lẫn nhau. Nếu bạn có những câu hỏi tích cực về học tập, công nghệ hoặc cơ hội hợp tác, mình luôn sẵn lòng chia sẻ nhé! Chúc bạn một ngày tốt lành! ✨";
+        }
         // Nhóm 1: Chào hỏi & Làm quen
-        if (lower.includes("chào") || lower.includes("hello") || lower.includes("hi") || lower.includes("hey") || lower.includes("alo") || lower.includes("ai đó") || lower.includes("ai đây") || lower.includes("whoami") || lower.includes("bạn là ai") || lower.includes("tên gì") || lower.includes("giới thiệu")) {
+        else if (lower.includes("chào") || lower.includes("hello") || lower.includes("hi") || lower.includes("hey") || lower.includes("alo") || lower.includes("ai đó") || lower.includes("ai đây") || lower.includes("whoami") || lower.includes("bạn là ai") || lower.includes("tên gì") || lower.includes("giới thiệu")) {
           reply = "Chào bạn! Mình là Tô Nguyên Vũ, hiện là sinh viên năm 3 ngành Công nghệ thông tin. Rất vui được đón tiếp bạn ghé thăm portfolio của mình! Bạn cần tìm hiểu thêm thông tin gì về mình nè? 😊";
         }
         // Nhóm 2: Trường học & Học vấn
