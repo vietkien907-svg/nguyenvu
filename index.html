@@ -1,1109 +1,1711 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tô Nguyên Vũ | Sinh viên Công nghệ thông tin</title>
-<meta name="description" content="Trang cá nhân của Tô Nguyên Vũ - Sinh viên Công nghệ thông tin năm 3. Đam mê lập trình, Linux và mã nguồn mở.">
-<meta name="keywords" content="Tô Nguyên Vũ, To Nguyen Vu, nguyenvu, vietkien907-svg, sinh viên CNTT, IT student, lập trình viên">
-<meta name="author" content="Tô Nguyên Vũ">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://vietkien907-svg.github.io/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tô Nguyên Vũ | Đam Mê Công Nghệ & Thành Tích Tiêu Biểu</title>
+  <meta name="description" content="Trang cá nhân của Tô Nguyên Vũ - Sinh viên Công nghệ thông tin xuất sắc, tràn đầy đam mê công nghệ và khát vọng sáng tạo.">
+  <meta name="keywords" content="Tô Nguyên Vũ, To Nguyen Vu, nguyenvu, vietkien907-svg, sinh viên CNTT, IT portfolio, thành tích CNTT">
+  <meta name="author" content="Tô Nguyên Vũ">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vietkien907-svg.github.io/nguyenvu/">
 
-<!-- Open Graph / Meta chia sẻ -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://vietkien907-svg.github.io/">
-<meta property="og:title" content="Tô Nguyên Vũ | Sinh viên Công nghệ thông tin">
-<meta property="og:description" content="Trang cá nhân của Tô Nguyên Vũ - Sinh viên CNTT năm 3. Chúc bạn một ngày vui!">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vietkien907-svg.github.io/nguyenvu/">
+  <meta property="og:title" content="Tô Nguyên Vũ | Đam Mê Công Nghệ & Thành Tích Tiêu Biểu">
+  <meta property="og:description" content="Khám phá hành trình đam mê và những dấu ấn thành tích của Tô Nguyên Vũ trong lĩnh vực Công nghệ thông tin.">
 
-<!-- Google Structured Data (Schema Person cho Google Search) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Tô Nguyên Vũ",
-  "alternateName": ["To Nguyen Vu", "vietkien907-svg", "nguyenvu"],
-  "url": "https://vietkien907-svg.github.io/",
-  "jobTitle": "Sinh viên Công nghệ thông tin",
-  "email": "mailto:ngvu265@gmail.com",
-  "sameAs": [
-    "https://github.com/vietkien907-svg"
-  ]
-}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-  /* ============ BIẾN MÀU - chỉnh ở đây ============ */
-  :root{
-    --bg:        #070b09;
-    --bg-2:      #0b110e;
-    --card:      #0f1613;
-    --card-2:    #121b17;
-    --border:    #1c2a23;
-    --green:     #00ff9c;
-    --green-2:   #00c97b;
-    --green-dim: rgba(0,255,156,.12);
-    --text:      #e6f1ec;
-    --muted:     #7e9189;
-    --radius:    16px;
-    --mono: 'JetBrains Mono', monospace;
-    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  <!-- Google Schema Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tô Nguyên Vũ",
+    "alternateName": ["To Nguyen Vu", "vietkien907-svg", "nguyenvu"],
+    "url": "https://vietkien907-svg.github.io/nguyenvu/",
+    "jobTitle": "Sinh viên Công nghệ thông tin",
+    "email": "mailto:ngvu265@gmail.com",
+    "sameAs": ["https://github.com/vietkien907-svg"]
   }
+  </script>
 
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:var(--sans);
-    background:var(--bg);
-    color:var(--text);
-    line-height:1.7;
-    overflow-x:hidden;
-    -webkit-font-smoothing:antialiased;
-  }
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  /* Nền lưới mờ */
-  body::before{
-    content:'';position:fixed;inset:0;z-index:-2;
-    background-image:
-      linear-gradient(rgba(0,255,156,.035) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,255,156,.035) 1px, transparent 1px);
-    background-size:52px 52px;
-    mask-image:radial-gradient(ellipse 90% 60% at 50% 0%, #000 30%, transparent 100%);
-  }
-  /* Quầng sáng xanh */
-  body::after{
-    content:'';position:fixed;z-index:-1;
-    top:-280px;left:50%;transform:translateX(-50%);
-    width:900px;height:700px;
-    background:radial-gradient(circle, rgba(0,255,156,.13) 0%, transparent 65%);
-    pointer-events:none;
-  }
-
-  ::selection{background:var(--green);color:#04120c}
-
-  /* Thanh tiến trình cuộn */
-  #progress{
-    position:fixed;top:0;left:0;height:2px;width:0%;
-    background:linear-gradient(90deg,var(--green),#00d4ff);
-    z-index:999;transition:width .1s linear;
-    box-shadow:0 0 12px var(--green);
-  }
-
-  /* ============ NAVBAR ============ */
-  nav{
-    position:fixed;top:0;left:0;right:0;z-index:900;
-    padding:16px 0;
-    transition:.35s ease;
-  }
-  nav.scrolled{
-    background:rgba(7,11,9,.82);
-    backdrop-filter:blur(14px);
-    -webkit-backdrop-filter:blur(14px);
-    border-bottom:1px solid var(--border);
-    padding:11px 0;
-  }
-  .nav-inner{
-    max-width:1120px;margin:0 auto;padding:0 24px;
-    display:flex;align-items:center;justify-content:space-between;
-  }
-  .logo{
-    display:flex;align-items:center;gap:10px;
-    font-family:var(--mono);font-weight:700;font-size:1.02rem;
-    color:var(--text);text-decoration:none;letter-spacing:-.5px;
-  }
-  .logo .mark{
-    width:34px;height:34px;border-radius:9px;
-    display:grid;place-items:center;
-    background:linear-gradient(145deg,#12241c,#0a1512);
-    border:1px solid rgba(0,255,156,.3);
-    box-shadow:0 0 16px rgba(0,255,156,.14), inset 0 0 12px rgba(0,255,156,.06);
-    flex-shrink:0;
-  }
-  .logo .mark svg{width:19px;height:19px}
-  .logo .cursor{
-    display:inline-block;width:8px;height:16px;background:var(--green);
-    margin-left:2px;vertical-align:middle;
-    animation:blink 1.1s step-end infinite;
-  }
-  @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-
-  .nav-links{display:flex;gap:4px;align-items:center;list-style:none}
-  .nav-links a{
-    color:var(--muted);text-decoration:none;font-size:.9rem;font-weight:500;
-    padding:8px 14px;border-radius:9px;transition:.25s;position:relative;
-  }
-  .nav-links a:hover{color:var(--green);background:var(--green-dim)}
-  .nav-links a.active{color:var(--green)}
-
-  .burger{
-    display:none;background:none;border:1px solid var(--border);
-    border-radius:9px;padding:8px;cursor:pointer;color:var(--green);
-  }
-  .burger svg{display:block;width:20px;height:20px}
-
-  /* ============ HERO ============ */
-  header{
-    min-height:100vh;display:flex;align-items:center;
-    padding:120px 24px 80px;position:relative;
-  }
-  .hero{
-    max-width:1120px;margin:0 auto;width:100%;
-    display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;
-  }
-  .badge{
-    display:inline-flex;align-items:center;gap:9px;
-    font-family:var(--mono);font-size:.76rem;letter-spacing:.5px;
-    color:var(--green);background:var(--green-dim);
-    border:1px solid rgba(0,255,156,.25);
-    padding:6px 14px;border-radius:100px;margin-bottom:24px;
-    text-transform:uppercase;
-  }
-  .dot{
-    width:7px;height:7px;border-radius:50%;background:var(--green);
-    box-shadow:0 0 8px var(--green);animation:pulse 2s infinite;
-  }
-  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.82)}}
-
-  .hero h1{
-    font-size:clamp(2.4rem,6vw,4.1rem);
-    font-weight:800;line-height:1.08;letter-spacing:-2.5px;margin-bottom:18px;
-  }
-  .hero h1 .accent{
-    background:linear-gradient(120deg,var(--green),#4dffc3 45%,#00d4ff);
-    -webkit-background-clip:text;background-clip:text;
-    -webkit-text-fill-color:transparent;
-  }
-  .type-line{
-    font-family:var(--mono);font-size:clamp(.92rem,2.2vw,1.12rem);
-    color:var(--muted);margin-bottom:22px;min-height:1.7em;
-  }
-  .type-line .prompt{color:var(--green);font-weight:700}
-  .type-line .typed{color:var(--text)}
-  .type-line .caret{
-    display:inline-block;width:9px;height:1.05em;background:var(--green);
-    vertical-align:-3px;margin-left:2px;animation:blink 1s step-end infinite;
-  }
-  .hero p.desc{
-    color:var(--muted);font-size:1.02rem;max-width:520px;margin-bottom:34px;
-  }
-  .hero p.desc strong{color:var(--text);font-weight:600}
-
-  .btn-row{display:flex;gap:14px;flex-wrap:wrap}
-  .btn{
-    display:inline-flex;align-items:center;gap:9px;
-    font-family:var(--sans);font-size:.94rem;font-weight:600;
-    padding:13px 26px;border-radius:11px;text-decoration:none;
-    cursor:pointer;border:1px solid transparent;transition:.28s;
-  }
-  .btn-primary{
-    background:var(--green);color:#04120c;
-    box-shadow:0 6px 26px rgba(0,255,156,.24);
-  }
-  .btn-primary:hover{
-    transform:translateY(-3px);
-    box-shadow:0 12px 34px rgba(0,255,156,.38);
-  }
-  .btn-ghost{
-    background:transparent;color:var(--text);border-color:var(--border);
-  }
-  .btn-ghost:hover{
-    border-color:var(--green);color:var(--green);
-    background:var(--green-dim);transform:translateY(-3px);
-  }
-  .btn svg{width:17px;height:17px}
-
-  /* --- Cửa sổ terminal (ảnh đại diện) --- */
-  .terminal{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:var(--radius);
-    overflow:hidden;
-    box-shadow:0 30px 80px rgba(0,0,0,.65), 0 0 0 1px rgba(0,255,156,.06), 0 0 60px rgba(0,255,156,.07);
-    font-family:var(--mono);
-    animation:float 6s ease-in-out infinite;
-  }
-  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}
-  .term-bar{
-    display:flex;align-items:center;gap:8px;
-    padding:12px 16px;background:var(--card-2);
-    border-bottom:1px solid var(--border);
-  }
-  .term-bar span{width:11px;height:11px;border-radius:50%}
-  .t-red{background:#ff5f57}.t-yel{background:#febc2e}.t-grn{background:#28c840}
-  .term-title{
-    margin-left:auto;font-size:.72rem;color:var(--muted);letter-spacing:.5px;
-  }
-  .term-body{padding:22px 20px;font-size:.83rem;line-height:1.95}
-  .term-body .ln{display:block}
-  .term-body .u{color:var(--green);font-weight:700}
-  .term-body .h{color:#4dffc3}
-  .term-body .p{color:var(--muted)}
-  .term-body .o{color:#c9d8d2}
-  .term-body .err{color:#ff6b6b}
-  .kali-tag{
-    margin-top:18px;padding-top:16px;border-top:1px dashed var(--border);
-    display:flex;align-items:center;gap:10px;
-    font-size:.75rem;color:var(--muted);
-  }
-  .kali-tag svg{width:26px;height:26px;flex-shrink:0}
-
-  /* ============ SECTION CHUNG ============ */
-  section{padding:100px 24px;position:relative}
-  .container{max-width:1120px;margin:0 auto}
-  .sec-head{margin-bottom:56px}
-  .sec-tag{
-    font-family:var(--mono);font-size:.78rem;color:var(--green);
-    letter-spacing:1.5px;text-transform:uppercase;
-    display:flex;align-items:center;gap:10px;margin-bottom:14px;
-  }
-  .sec-tag::before{
-    content:'';width:26px;height:1px;background:var(--green);
-  }
-  .sec-head h2{
-    font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;
-    letter-spacing:-1.3px;line-height:1.2;
-  }
-  .sec-head h2 em{
-    font-style:normal;color:var(--green);
-  }
-  .sec-head p.sub{color:var(--muted);margin-top:12px;max-width:600px;font-size:.98rem}
-
-  /* ============ ABOUT ============ */
-  .about-grid{
-    display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:start;
-  }
-  .about-card{
-    background:linear-gradient(160deg,var(--card),var(--bg-2));
-    border:1px solid var(--border);border-radius:var(--radius);
-    padding:34px;position:relative;overflow:hidden;
-  }
-  .about-card::before{
-    content:'';position:absolute;top:0;left:0;width:100%;height:2px;
-    background:linear-gradient(90deg,var(--green),transparent 70%);
-  }
-  .about-card p{color:var(--muted);margin-bottom:16px;font-size:.98rem}
-  .about-card p:last-child{margin-bottom:0}
-  .about-card p strong{color:var(--text);font-weight:600}
-  .about-card .hl{color:var(--green);font-weight:600}
-
-  .info-list{display:flex;flex-direction:column;gap:12px}
-  .info-item{
-    display:flex;align-items:center;gap:14px;
-    background:var(--card);border:1px solid var(--border);
-    border-radius:12px;padding:15px 18px;transition:.28s;
-  }
-  .info-item:hover{
-    border-color:rgba(0,255,156,.4);
-    transform:translateX(6px);
-    background:var(--card-2);
-  }
-  .info-item .ico{
-    width:38px;height:38px;border-radius:10px;flex-shrink:0;
-    display:grid;place-items:center;
-    background:var(--green-dim);border:1px solid rgba(0,255,156,.2);
-  }
-  .info-item .ico svg{width:18px;height:18px;stroke:var(--green)}
-  .info-item .txt small{
-    display:block;font-size:.7rem;color:var(--muted);
-    text-transform:uppercase;letter-spacing:.9px;font-family:var(--mono);
-  }
-  .info-item .txt span{font-size:.92rem;font-weight:500;color:var(--text)}
-
-  /* ============ SKILLS ============ */
-  .skills-wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px}
-  .skill{margin-bottom:24px}
-  .skill-top{
-    display:flex;justify-content:space-between;align-items:baseline;
-    margin-bottom:9px;font-size:.9rem;font-weight:500;
-  }
-  .skill-top .pct{font-family:var(--mono);font-size:.78rem;color:var(--green)}
-  .bar{
-    height:7px;background:#111b17;border-radius:100px;overflow:hidden;
-    border:1px solid var(--border);
-  }
-  .bar i{
-    display:block;height:100%;width:0;border-radius:100px;
-    background:linear-gradient(90deg,var(--green-2),var(--green));
-    box-shadow:0 0 12px rgba(0,255,156,.5);
-    transition:width 1.4s cubic-bezier(.2,.8,.2,1);
-  }
-
-  .soft-title{
-    font-family:var(--mono);font-size:.78rem;color:var(--muted);
-    text-transform:uppercase;letter-spacing:1.4px;margin-bottom:18px;
-  }
-  .chips{display:flex;flex-wrap:wrap;gap:10px}
-  .chip{
-    font-size:.85rem;font-weight:500;
-    padding:9px 17px;border-radius:100px;
-    background:var(--card);border:1px solid var(--border);
-    color:var(--muted);transition:.25s;cursor:default;
-  }
-  .chip:hover{
-    color:var(--green);border-color:rgba(0,255,156,.45);
-    background:var(--green-dim);transform:translateY(-2px);
-  }
-
-  /* ============ EDUCATION / TIMELINE ============ */
-  .timeline{position:relative;padding-left:36px}
-  .timeline::before{
-    content:'';position:absolute;left:8px;top:8px;bottom:8px;width:2px;
-    background:linear-gradient(180deg,var(--green),rgba(0,255,156,.06));
-    border-radius:2px;
-  }
-  .tl-item{position:relative;padding-bottom:40px}
-  .tl-item:last-child{padding-bottom:0}
-  .tl-item::before{
-    content:'';position:absolute;left:-35px;top:7px;
-    width:15px;height:15px;border-radius:50%;
-    background:var(--bg);border:2px solid var(--green);
-    box-shadow:0 0 0 4px rgba(0,255,156,.1), 0 0 14px rgba(0,255,156,.5);
-  }
-  .tl-date{
-    font-family:var(--mono);font-size:.76rem;color:var(--green);
-    letter-spacing:.6px;margin-bottom:7px;display:block;
-  }
-  .tl-card{
-    background:var(--card);border:1px solid var(--border);
-    border-radius:13px;padding:22px 24px;transition:.3s;
-  }
-  .tl-card:hover{
-    border-color:rgba(0,255,156,.35);
-    box-shadow:0 12px 34px rgba(0,0,0,.4);
-  }
-  .tl-card h3{font-size:1.06rem;font-weight:700;margin-bottom:5px}
-  .tl-card .place{
-    font-size:.87rem;color:var(--green);font-weight:500;margin-bottom:9px;
-  }
-  .tl-card p{font-size:.91rem;color:var(--muted)}
-
-  /* ============ PROJECTS ============ */
-  .proj-grid{
-    display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:22px;
-  }
-  .proj{
-    background:var(--card);border:1px solid var(--border);
-    border-radius:var(--radius);padding:26px;transition:.32s;
-    position:relative;overflow:hidden;
-  }
-  .proj::after{
-    content:'';position:absolute;inset:0;
-    background:radial-gradient(circle at top right, rgba(0,255,156,.09), transparent 62%);
-    opacity:0;transition:.32s;
-  }
-  .proj:hover{
-    transform:translateY(-7px);
-    border-color:rgba(0,255,156,.4);
-    box-shadow:0 22px 46px rgba(0,0,0,.55), 0 0 0 1px rgba(0,255,156,.12);
-  }
-  .proj:hover::after{opacity:1}
-  .proj-head{
-    display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;
-  }
-  .proj-ico{
-    width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
-    background:var(--green-dim);border:1px solid rgba(0,255,156,.22);
-  }
-  .proj-ico svg{width:20px;height:20px;stroke:var(--green)}
-  .proj-num{
-    font-family:var(--mono);font-size:.74rem;color:#2c3d36;font-weight:700;
-  }
-  .proj h3{font-size:1.03rem;font-weight:700;margin-bottom:9px;position:relative;z-index:1}
-  .proj p{font-size:.89rem;color:var(--muted);margin-bottom:16px;position:relative;z-index:1}
-  .proj-tags{display:flex;flex-wrap:wrap;gap:7px;position:relative;z-index:1}
-  .proj-tags span{
-    font-family:var(--mono);font-size:.7rem;color:var(--green-2);
-    background:rgba(0,255,156,.08);border:1px solid rgba(0,255,156,.16);
-    padding:3px 10px;border-radius:6px;
-  }
-
-  /* ============ CONTACT ============ */
-  #contact{padding-bottom:120px}
-  .contact-box{
-    background:linear-gradient(155deg,var(--card),var(--bg-2));
-    border:1px solid var(--border);border-radius:22px;
-    padding:60px 40px;text-align:center;position:relative;overflow:hidden;
-  }
-  .contact-box::before{
-    content:'';position:absolute;top:-140px;left:50%;transform:translateX(-50%);
-    width:520px;height:300px;
-    background:radial-gradient(circle, rgba(0,255,156,.16), transparent 68%);
-    pointer-events:none;
-  }
-  .contact-box h2{
-    font-size:clamp(1.6rem,4vw,2.3rem);font-weight:800;
-    letter-spacing:-1.2px;margin-bottom:14px;position:relative;
-  }
-  .contact-box p{
-    color:var(--muted);max-width:480px;margin:0 auto 34px;position:relative;
-  }
-  .mail-btn{
-    display:inline-flex;align-items:center;gap:11px;
-    font-family:var(--mono);font-size:.95rem;font-weight:500;
-    color:var(--green);text-decoration:none;
-    background:rgba(0,255,156,.07);
-    border:1px solid rgba(0,255,156,.3);
-    padding:15px 30px;border-radius:12px;transition:.3s;position:relative;
-  }
-  .mail-btn:hover{
-    background:var(--green);color:#04120c;
-    box-shadow:0 12px 38px rgba(0,255,156,.35);
-    transform:translateY(-3px);
-  }
-  .mail-btn svg{width:18px;height:18px}
-
-  .socials{
-    display:flex;justify-content:center;gap:12px;margin-top:34px;
-    position:relative;flex-wrap:wrap;
-  }
-  .soc{
-    width:46px;height:46px;border-radius:12px;display:grid;place-items:center;
-    background:var(--card);border:1px solid var(--border);
-    color:var(--muted);transition:.28s;text-decoration:none;
-  }
-  .soc:hover{
-    color:var(--green);border-color:rgba(0,255,156,.45);
-    background:var(--green-dim);transform:translateY(-4px);
-  }
-  .soc svg{width:19px;height:19px}
-
-  /* ============ FOOTER ============ */
-  footer{
-    border-top:1px solid var(--border);padding:30px 24px;
-    text-align:center;
-  }
-  footer .f-inner{
-    max-width:1120px;margin:0 auto;
-    display:flex;align-items:center;justify-content:space-between;
-    gap:16px;flex-wrap:wrap;
-    font-family:var(--mono);font-size:.8rem;color:var(--muted);
-  }
-  footer .f-inner .g{color:var(--green)}
-
-  /* ============ REVEAL ANIMATION ============ */
-  .reveal{
-    opacity:0;transform:translateY(34px);
-    transition:opacity .75s cubic-bezier(.2,.8,.2,1), transform .75s cubic-bezier(.2,.8,.2,1);
-  }
-  .reveal.in{opacity:1;transform:none}
-  .d1{transition-delay:.08s}.d2{transition-delay:.16s}
-  .d3{transition-delay:.24s}.d4{transition-delay:.32s}
-
-  /* ============ RESPONSIVE ============ */
-  @media(max-width:900px){
-    .hero{grid-template-columns:1fr;gap:46px}
-    .terminal{max-width:520px}
-    .about-grid{grid-template-columns:1fr;gap:28px}
-    .skills-wrap{grid-template-columns:1fr;gap:38px}
-  }
-  @media(max-width:720px){
-    .nav-links{
-      position:fixed;top:66px;left:16px;right:16px;
-      flex-direction:column;align-items:stretch;gap:4px;
-      background:rgba(11,17,14,.97);
-      backdrop-filter:blur(16px);
-      border:1px solid var(--border);border-radius:14px;
-      padding:12px;
-      opacity:0;visibility:hidden;transform:translateY(-12px);
-      transition:.3s;
-      box-shadow:0 22px 50px rgba(0,0,0,.6);
+  <style>
+    :root {
+      --bg: #060913;
+      --bg-card: rgba(15, 23, 42, 0.65);
+      --bg-card-hover: rgba(30, 41, 59, 0.85);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-highlight: rgba(99, 102, 241, 0.45);
+      --primary: #6366f1;
+      --primary-light: #818cf8;
+      --cyan: #06b6d4;
+      --emerald: #10b981;
+      --gold: #f59e0b;
+      --rose: #f43f5e;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --font-heading: 'Space Grotesk', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
     }
-    .nav-links.open{opacity:1;visibility:visible;transform:none}
-    .nav-links a{padding:12px 16px}
-    .burger{display:block}
-    section{padding:76px 20px}
-    header{padding:110px 20px 70px}
-    .contact-box{padding:44px 22px}
-    .about-card{padding:26px 22px}
-    .timeline{padding-left:30px}
-    .tl-item::before{left:-29px}
-    footer .f-inner{justify-content:center;text-align:center}
-  }
-  @media(max-width:400px){
-    .btn{width:100%;justify-content:center}
-    .mail-btn{font-size:.82rem;padding:13px 18px}
-  }
 
-  @media (prefers-reduced-motion: reduce){
-    *{animation:none!important;transition:none!important}
-  }
-</style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Background Interactive Canvas */
+    #particle-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    /* Ambient Glow orbs */
+    .ambient-glow {
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      filter: blur(140px);
+      z-index: -1;
+      pointer-events: none;
+      opacity: 0.25;
+      animation: floatGlow 18s ease-in-out infinite alternate;
+    }
+
+    .glow-1 {
+      top: -150px;
+      left: -100px;
+      background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+    }
+
+    .glow-2 {
+      bottom: 10%;
+      right: -150px;
+      background: radial-gradient(circle, var(--cyan) 0%, transparent 70%);
+      animation-delay: -7s;
+    }
+
+    @keyframes floatGlow {
+      0% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(60px, 80px) scale(1.15); }
+      100% { transform: translate(-40px, 40px) scale(0.95); }
+    }
+
+    /* Scroll progress bar */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--cyan), var(--primary), var(--gold));
+      z-index: 1000;
+      box-shadow: 0 0 10px rgba(99, 102, 241, 0.7);
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      padding: 18px 0;
+      transition: all 0.35s ease;
+    }
+
+    nav.scrolled {
+      background: rgba(6, 9, 19, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--cyan));
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      color: #fff;
+      font-size: 1.1rem;
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .brand-avatar::after {
+      content: '';
+      position: absolute;
+      inset: -50%;
+      background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.4) 50%, transparent 60%);
+      animation: sweepLight 4s infinite;
+    }
+
+    @keyframes sweepLight {
+      0% { transform: translateX(-100%); }
+      25%, 100% { transform: translateX(100%); }
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 8px;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 8px 16px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      border-radius: 10px;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-link.active {
+      color: var(--cyan);
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--primary), var(--cyan));
+      color: #fff;
+      padding: 9px 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 18px rgba(99, 102, 241, 0.35);
+      transition: all 0.3s ease;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(6, 182, 212, 0.45);
+    }
+
+    .burger {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    /* Container chung */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 110px 0;
+      position: relative;
+    }
+
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 65px;
+    }
+
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 6px 16px;
+      border-radius: 100px;
+      background: rgba(99, 102, 241, 0.12);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: var(--primary-light);
+      margin-bottom: 16px;
+    }
+
+    .pill-badge.gold {
+      background: rgba(245, 158, 11, 0.12);
+      border-color: rgba(245, 158, 11, 0.3);
+      color: var(--gold);
+    }
+
+    .pill-badge.emerald {
+      background: rgba(16, 185, 129, 0.12);
+      border-color: rgba(16, 185, 129, 0.3);
+      color: var(--emerald);
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.1rem, 4.5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -1.2px;
+      margin-bottom: 16px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #fff 20%, var(--primary-light) 60%, var(--cyan) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gradient-gold {
+      background: linear-gradient(135deg, #fff 20%, var(--gold) 70%, #fbbf24 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* ================= HERO SECTION ================= */
+    .hero-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 140px 0 80px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.95fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+    }
+
+    .typing-container {
+      font-family: var(--font-mono);
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
+      color: var(--cyan);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 1.8em;
+    }
+
+    .cursor-blink {
+      display: inline-block;
+      width: 9px;
+      height: 1.2em;
+      background: var(--cyan);
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .hero-bio {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 36px;
+      max-width: 560px;
+    }
+
+    .hero-bio strong {
+      color: #fff;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 45px;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-size: 0.98rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+      cursor: pointer;
+    }
+
+    .btn-main {
+      background: linear-gradient(135deg, var(--primary), var(--cyan));
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(99, 102, 241, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-main:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(6, 182, 212, 0.45);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.25);
+      transform: translateY(-3px);
+      color: #fff;
+    }
+
+    /* Hero Stats Banner */
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 24px;
+      background: rgba(15, 23, 42, 0.5);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      backdrop-filter: blur(12px);
+    }
+
+    .stat-box h3 {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: baseline;
+      gap: 2px;
+    }
+
+    .stat-box h3 .plus {
+      color: var(--cyan);
+      font-size: 1.5rem;
+    }
+
+    .stat-box p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Hero Visual Card (Thẻ vinh danh tương tác) */
+    .hero-visual {
+      position: relative;
+    }
+
+    .trophy-card-wrapper {
+      position: relative;
+      background: linear-gradient(165deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.9));
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 28px;
+      padding: 40px 32px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 60px rgba(99, 102, 241, 0.15);
+      backdrop-filter: blur(20px);
+      animation: floatHero 6s ease-in-out infinite;
+    }
+
+    @keyframes floatHero {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .card-glow-halo {
+      position: absolute;
+      inset: -2px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, var(--gold), var(--primary), var(--cyan));
+      z-index: -1;
+      opacity: 0.4;
+      filter: blur(12px);
+    }
+
+    .trophy-badge {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .trophy-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0.05));
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      box-shadow: 0 0 25px rgba(245, 158, 11, 0.2);
+    }
+
+    .trophy-info h4 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .trophy-info p {
+      font-size: 0.88rem;
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    .quote-box {
+      background: rgba(0, 0, 0, 0.25);
+      border-left: 3px solid var(--cyan);
+      padding: 16px 20px;
+      border-radius: 0 14px 14px 0;
+      margin-bottom: 28px;
+      font-style: italic;
+      color: #e2e8f0;
+      font-size: 0.95rem;
+    }
+
+    .featured-points {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .f-point {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.94rem;
+      color: var(--text-muted);
+    }
+
+    .f-point .dot-check {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: var(--emerald);
+      display: grid;
+      place-items: center;
+      font-size: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    /* Floating mini badges */
+    .floating-pill {
+      position: absolute;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      padding: 10px 18px;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      z-index: 2;
+    }
+
+    .pill-top-right {
+      top: -20px;
+      right: -20px;
+      animation: floatBadge 5s ease-in-out infinite alternate;
+    }
+
+    .pill-bottom-left {
+      bottom: -20px;
+      left: -20px;
+      animation: floatBadge 5s ease-in-out infinite alternate -2.5s;
+    }
+
+    @keyframes floatBadge {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(12px); }
+    }
+
+    /* ================= SECTION: THÀNH TÍCH NỔI BẬT ================= */
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 26px;
+    }
+
+    .achievement-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 34px 28px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .achievement-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--primary), transparent);
+      opacity: 0;
+      transition: opacity 0.35s;
+    }
+
+    .achievement-card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-highlight);
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(99, 102, 241, 0.15);
+    }
+
+    .achievement-card:hover::before {
+      opacity: 1;
+    }
+
+    .achieve-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .achieve-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      font-size: 1.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+    }
+
+    .achieve-year {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      padding: 5px 12px;
+      border-radius: 100px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-muted);
+    }
+
+    .achievement-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .achievement-card .org {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--cyan);
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .achievement-card p {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ================= SECTION: ĐAM MÊ & GIÁ TRỊ ================= */
+    .passion-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    .passion-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 28px;
+      transition: all 0.35s ease;
+      position: relative;
+    }
+
+    .passion-card:hover {
+      border-color: rgba(6, 182, 212, 0.4);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+    }
+
+    .p-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(99, 102, 241, 0.15));
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      display: grid;
+      place-items: center;
+      color: var(--cyan);
+      font-size: 1.4rem;
+      margin-bottom: 22px;
+    }
+
+    .passion-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .passion-card p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ================= SECTION: KỸ NĂNG CHUYÊN MÔN ================= */
+    .skills-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .skill-category {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 34px;
+    }
+
+    .category-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+    }
+
+    .skill-bar-wrap {
+      margin-bottom: 22px;
+    }
+
+    .skill-bar-wrap:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .skill-info .percent {
+      font-family: var(--font-mono);
+      color: var(--cyan);
+    }
+
+    .progress-track {
+      height: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 100px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      border-radius: 100px;
+      background: linear-gradient(90deg, var(--primary), var(--cyan));
+      box-shadow: 0 0 12px rgba(6, 182, 212, 0.6);
+      transition: width 1.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .tag-item {
+      font-size: 0.86rem;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 100px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      transition: all 0.25s;
+    }
+
+    .tag-item:hover {
+      color: #fff;
+      background: rgba(99, 102, 241, 0.15);
+      border-color: rgba(99, 102, 241, 0.4);
+      transform: translateY(-2px);
+    }
+
+    /* ================= SECTION: DỰ ÁN TIÊU BIỂU ================= */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      overflow: hidden;
+      transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--border-highlight);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    .project-cover {
+      height: 180px;
+      background: linear-gradient(135deg, #1e1b4b, #0f172a);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .project-cover svg {
+      width: 72px;
+      height: 72px;
+      stroke: var(--cyan);
+      opacity: 0.85;
+      transition: transform 0.4s ease;
+    }
+
+    .project-card:hover .project-cover svg {
+      transform: scale(1.15) rotate(5deg);
+    }
+
+    .project-body {
+      padding: 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-body h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .project-body p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+
+    .project-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+
+    .project-tags span {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      color: var(--cyan);
+      background: rgba(6, 182, 212, 0.1);
+      border: 1px solid rgba(6, 182, 212, 0.2);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    .project-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+
+    .link-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .link-action:hover {
+      color: var(--cyan);
+    }
+
+    /* ================= SECTION: LIÊN HỆ ================= */
+    .contact-banner {
+      background: linear-gradient(145deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.95));
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 30px;
+      padding: 70px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+    }
+
+    .contact-banner h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .contact-banner p {
+      color: var(--text-muted);
+      max-width: 580px;
+      margin: 0 auto 36px;
+      font-size: 1.05rem;
+    }
+
+    .email-container {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 14px;
+      padding: 14px 28px;
+      margin-bottom: 34px;
+      transition: all 0.3s ease;
+    }
+
+    .email-container:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--cyan);
+      box-shadow: 0 10px 30px rgba(6, 182, 212, 0.2);
+    }
+
+    .email-link {
+      font-family: var(--font-mono);
+      font-size: 1.05rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .social-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .social-btn:hover {
+      color: #fff;
+      background: var(--primary);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 34px 0;
+      text-align: center;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Animation on scroll reveal */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(35px);
+      transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .fade-up.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+      .skills-layout {
+        grid-template-columns: 1fr;
+      }
+      .passion-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        position: fixed;
+        top: 75px;
+        left: 20px;
+        right: 20px;
+        background: rgba(15, 23, 42, 0.98);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        display: none;
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+      }
+      .nav-menu.open {
+        display: flex;
+      }
+      .burger {
+        display: block;
+      }
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+      .footer-content {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div id="progress"></div>
+  <!-- Thanh tiến trình cuộn -->
+  <div id="progress-bar"></div>
 
-<!-- ================= NAVBAR ================= -->
-<nav id="nav">
-  <div class="nav-inner">
-    <a href="#top" class="logo">
-      <span class="mark">
-        <!-- Icon terminal -->
-        <svg viewBox="0 0 24 24" fill="none" stroke="#00ff9c" stroke-width="2.1"
-             stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="4 17 10 11 4 5"></polyline>
-          <line x1="12" y1="19" x2="20" y2="19"></line>
+  <!-- Nền Canvas Tương Tác Hạt Chuyển Động -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Quầng sáng hiệu ứng -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#top" class="brand">
+        <div class="brand-avatar">V</div>
+        <span>Tô Nguyên Vũ</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">Về tôi</a></li>
+        <li><a href="#achievements" class="nav-link">Thành tích</a></li>
+        <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+        <li><a href="#projects" class="nav-link">Dự án</a></li>
+        <li><a href="#contact" class="nav-cta">Liên hệ ngay</a></li>
+      </ul>
+
+      <button class="burger" id="burgerBtn" aria-label="Menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
-      </span>
-      nguyenvu<span class="cursor"></span>
-    </a>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">Giới thiệu</a></li>
-      <li><a href="#skills">Kỹ năng</a></li>
-      <li><a href="#education">Học vấn</a></li>
-      <li><a href="#projects">Dự án</a></li>
-      <li><a href="#contact">Liên hệ</a></li>
-    </ul>
-
-    <button class="burger" id="burger" aria-label="Menu">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-           stroke-linecap="round">
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <line x1="3" y1="12" x2="21" y2="12"></line>
-        <line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
-    </button>
-  </div>
-</nav>
-
-<!-- ================= HERO ================= -->
-<header id="top">
-  <div class="hero">
-
-    <div class="hero-text">
-      <div class="badge reveal">
-        <span class="dot"></span> Sẵn sàng cho cơ hội mới
-      </div>
-
-      <h1 class="reveal d1">
-        Xin chào, tôi là<br>
-        <span class="accent">Tô Nguyên Vũ</span>
-      </h1>
-
-      <div class="type-line reveal d2">
-        <span class="prompt">vu@kali:~$</span>
-        <span class="typed" id="typed"></span><span class="caret"></span>
-      </div>
-
-      <p class="desc reveal d3">
-        Sinh viên <strong>Công nghệ thông tin</strong> năm 3 — yêu thích lập trình,
-        hệ điều hành Linux và thế giới mã nguồn mở. Luôn học hỏi mỗi ngày để
-        biến ý tưởng thành sản phẩm thực tế.
-      </p>
-
-      <div class="btn-row reveal d4">
-        <a href="#contact" class="btn btn-primary">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-               stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-          </svg>
-          Liên hệ với tôi
-        </a>
-        <a href="#about" class="btn btn-ghost">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-               stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="8" r="4"></circle>
-            <path d="M4 21v-1a7 7 0 0 1 14 0v1"></path>
-          </svg>
-          Tìm hiểu thêm
-        </a>
-      </div>
+      </button>
     </div>
+  </nav>
 
-    <!-- Cửa sổ terminal giả lập -->
-    <div class="terminal reveal d2">
-      <div class="term-bar">
-        <span class="t-red"></span><span class="t-yel"></span><span class="t-grn"></span>
-        <span class="term-title">vu@kali — zsh</span>
-      </div>
-      <div class="term-body">
-        <span class="ln"><span class="u">┌──(vu㉿kali)</span><span class="p">-[~]</span></span>
-        <span class="ln"><span class="u">└─$</span> <span class="o">whoami</span></span>
-        <span class="ln"><span class="h">Tô Nguyên Vũ</span></span>
-        <br>
-        <span class="ln"><span class="u">┌──(vu㉿kali)</span><span class="p">-[~]</span></span>
-        <span class="ln"><span class="u">└─$</span> <span class="o">cat vai_tro.txt</span></span>
-        <span class="ln"><span class="h">Sinh viên CNTT — Năm 3</span></span>
-        <br>
-        <span class="ln"><span class="u">┌──(vu㉿kali)</span><span class="p">-[~]</span></span>
-        <span class="ln"><span class="u">└─$</span> <span class="o">echo $SLOGAN</span></span>
-        <span class="ln"><span class="h">"Chúc bạn một ngày vui" ✨</span></span>
+  <!-- ================= HERO SECTION ================= -->
+  <header class="hero-section" id="top">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <div class="hero-content">
+          <div class="pill-badge emerald fade-up">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--emerald); display: inline-block; box-shadow: 0 0 10px var(--emerald);"></span>
+            Sẵn sàng bứt phá &amp; cống hiến
+          </div>
 
-        <div class="kali-tag">
-          <!-- Logo Kali Linux (rồng cách điệu) -->
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="kg" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#00ff9c"/>
-                <stop offset="100%" stop-color="#00c97b"/>
-              </linearGradient>
-            </defs>
-            <!-- Đầu rồng Kali cách điệu -->
-            <path d="M14 22 C10 16, 8 10, 12 6 C18 10, 22 14, 24 18
-                     C28 16, 34 16, 38 19 C44 14, 50 12, 54 14
-                     C52 20, 50 24, 47 27 C50 32, 50 38, 46 43
-                     C42 48, 34 51, 28 50 C24 56, 18 58, 13 56
-                     C15 51, 16 46, 16 42 C12 38, 11 30, 14 22 Z"
-                  fill="url(#kg)" opacity="0.92"/>
-            <!-- Mắt -->
-            <circle cx="33" cy="30" r="2.6" fill="#070b09"/>
-            <!-- Miệng / răng nanh -->
-            <path d="M24 40 L27 45 L30 40" fill="#070b09" opacity="0.55"/>
-          </svg>
-          <span>powered by <strong style="color:var(--green)">Kali Linux</strong></span>
+          <h1 class="fade-up delay-1">
+            Chinh phục công nghệ bằng <span class="gradient-text">đam mê</span>
+          </h1>
+
+          <div class="typing-container fade-up delay-2">
+            <span>&gt;</span>
+            <span id="typed-text"></span>
+            <span class="cursor-blink"></span>
+          </div>
+
+          <p class="hero-bio fade-up delay-2">
+            Xin chào! Tôi là <strong>Tô Nguyên Vũ</strong>, sinh viên năm 3 chuyên ngành <strong>Công nghệ thông tin</strong>. Với trái tim nhiệt huyết dành cho lập trình, tư duy giải quyết vấn đề sáng tạo và những thành tựu học tập nổi bật, tôi không ngừng biến ý tưởng thành những giải pháp công nghệ giá trị.
+          </p>
+
+          <div class="hero-actions fade-up delay-3">
+            <a href="#achievements" class="btn btn-main">
+              <span>Khám phá thành tích</span>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Kết nối với tôi</span>
+            </a>
+          </div>
+
+          <div class="hero-stats fade-up delay-3">
+            <div class="stat-box">
+              <h3><span class="counter" data-target="3">0</span><span class="plus">+</span></h3>
+              <p>Năm học tập &amp; rèn luyện CNTT</p>
+            </div>
+            <div class="stat-box">
+              <h3><span class="counter" data-target="15">0</span><span class="plus">+</span></h3>
+              <p>Dự án &amp; bài tập lớn hoàn thành</p>
+            </div>
+            <div class="stat-box">
+              <h3><span class="counter" data-target="100">0</span><span class="plus">%</span></h3>
+              <p>Năng lượng đam mê &amp; kiên trì</p>
+            </div>
+          </div>
         </div>
+
+        <!-- Thẻ vinh danh tương tác bên phải -->
+        <div class="hero-visual fade-up delay-2">
+          <div class="trophy-card-wrapper">
+            <div class="card-glow-halo"></div>
+            
+            <div class="trophy-badge">
+              <div class="trophy-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                  <path d="M4 22h16"></path>
+                  <path d="M10 14.66V17c0 .55-.45 1-1 1H7"></path>
+                  <path d="M14 14.66V17c0 .55.45 1 1 1h2"></path>
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                </svg>
+              </div>
+              <div class="trophy-info">
+                <h4>Sinh viên CNTT Tiêu Biểu</h4>
+                <p>Năm 3 — Học tập &amp; Sáng tạo</p>
+              </div>
+            </div>
+
+            <div class="quote-box">
+              "Đam mê là ngọn lửa dẫn đường, nhưng sự kiên định và hành động mỗi ngày mới là thứ tạo nên thành tựu vượt bậc."
+            </div>
+
+            <div class="featured-points">
+              <div class="f-point">
+                <div class="dot-check">✓</div>
+                <span>Thành tích học tập chuyên ngành nổi bật</span>
+              </div>
+              <div class="f-point">
+                <div class="dot-check">✓</div>
+                <span>Năng lực tự học &amp; nghiên cứu công nghệ độc lập</span>
+              </div>
+              <div class="f-point">
+                <div class="dot-check">✓</div>
+                <span>Làm chủ Linux, C/C++, Java, Web &amp; Cơ sở dữ liệu</span>
+              </div>
+            </div>
+
+            <!-- Mini badges bay lơ lửng -->
+            <div class="floating-pill pill-top-right">
+              <span style="color: var(--gold);">⭐</span> Top Sinh viên Xuất sắc
+            </div>
+            <div class="floating-pill pill-bottom-left">
+              <span style="color: var(--cyan);">🚀</span> Đam mê công nghệ
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+  </header>
 
-  </div>
-</header>
-
-<!-- ================= ABOUT ================= -->
-<section id="about">
-  <div class="container">
-    <div class="sec-head reveal">
-      <div class="sec-tag">01 — Giới thiệu</div>
-      <h2>Về <em>bản thân tôi</em></h2>
-    </div>
-
-    <div class="about-grid">
-      <div class="about-card reveal d1">
-        <p>
-          Chào bạn! Mình là <strong>Tô Nguyên Vũ</strong>, hiện là sinh viên năm 3
-          ngành <span class="hl">Công nghệ thông tin</span>. Mình bắt đầu hành trình
-          với lập trình từ những dòng code đầu tiên và nhanh chóng bị cuốn hút bởi
-          sức mạnh của công nghệ.
-        </p>
-        <p>
-          Mình yêu thích <strong>lập trình ứng dụng</strong>, tìm hiểu về
-          <strong>hệ điều hành Linux</strong> và đặc biệt là tinh thần
-          <span class="hl">mã nguồn mở</span>. Môi trường dòng lệnh, nơi mọi thứ đều
-          có thể được điều khiển bằng vài dòng lệnh, luôn khiến mình thấy thú vị.
-        </p>
-        <p>
-          Ngoài giờ học, mình dành thời gian tự học công nghệ mới, làm các dự án nhỏ
-          để rèn luyện kỹ năng, và đọc tài liệu kỹ thuật. Mình tin rằng
-          <strong>kiên trì và tò mò</strong> là hai phẩm chất quan trọng nhất của
-          một lập trình viên.
-        </p>
-        <p>
-          Mục tiêu sắp tới của mình là trở thành một
-          <span class="hl">lập trình viên vững chuyên môn</span>, có thể tham gia
-          vào những dự án thực tế và đóng góp cho cộng đồng công nghệ Việt Nam. 🚀
+  <!-- ================= SECTION: THÀNH TÍCH TIÊU BIỂU ================= -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="pill-badge gold">Dấu Ấn Đạt Được</div>
+        <h2 class="section-title">Bảng Vàng <span class="gradient-gold">Thành Tích</span></h2>
+        <p class="section-desc">
+          Mỗi mốc son là minh chứng rõ nét cho quá trình nỗ lực bền bỉ, tinh thần trách nhiệm và niềm say mê bất tận với ngành Công nghệ thông tin.
         </p>
       </div>
 
-      <div class="info-list">
-        <div class="info-item reveal d1">
-          <div class="ico">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="8" r="4"></circle>
-              <path d="M4 21v-1a7 7 0 0 1 14 0v1"></path>
-            </svg>
+      <div class="achievements-grid">
+        
+        <!-- Thành tích 1 -->
+        <div class="achievement-card fade-up delay-1">
+          <div class="achieve-header">
+            <div class="achieve-icon" style="color: var(--gold); border-color: rgba(245, 158, 11, 0.3);">
+              🏆
+            </div>
+            <span class="achieve-year">2023 — 2025</span>
           </div>
-          <div class="txt"><small>Họ và tên</small><span>Tô Nguyên Vũ</span></div>
-        </div>
-
-        <div class="info-item reveal d2">
-          <div class="ico">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-            </svg>
-          </div>
-          <div class="txt"><small>Vai trò</small><span>Sinh viên CNTT</span></div>
-        </div>
-
-        <div class="info-item reveal d3">
-          <div class="ico">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="4" width="18" height="18" rx="2"></rect>
-              <line x1="16" y1="2" x2="16" y2="6"></line>
-              <line x1="8" y1="2" x2="8" y2="6"></line>
-              <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>
-          </div>
-          <div class="txt"><small>Hiện tại</small><span>Sinh viên năm 3</span></div>
-        </div>
-
-        <div class="info-item reveal d4">
-          <div class="ico">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-          </div>
-          <div class="txt"><small>Email</small><span>ngvu265@gmail.com</span></div>
-        </div>
-
-        <div class="info-item reveal d4">
-          <div class="ico">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="4 17 10 11 4 5"></polyline>
-              <line x1="12" y1="19" x2="20" y2="19"></line>
-            </svg>
-          </div>
-          <div class="txt"><small>Môi trường yêu thích</small><span>Kali Linux 🐉</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= SKILLS ================= -->
-<section id="skills">
-  <div class="container">
-    <div class="sec-head reveal">
-      <div class="sec-tag">02 — Kỹ năng</div>
-      <h2>Những gì tôi <em>đang học &amp; làm</em></h2>
-      <p class="sub">
-        Là sinh viên CNTT năm 3, mình đã được tiếp xúc với nhiều mảng kiến thức
-        từ lập trình cơ bản đến cơ sở dữ liệu và hệ điều hành.
-      </p>
-    </div>
-
-    <div class="skills-wrap">
-      <div class="reveal d1">
-        <div class="skill">
-          <div class="skill-top"><span>Lập trình C / C++</span><span class="pct">80%</span></div>
-          <div class="bar"><i data-w="80"></i></div>
-        </div>
-        <div class="skill">
-          <div class="skill-top"><span>HTML / CSS</span><span class="pct">85%</span></div>
-          <div class="bar"><i data-w="85"></i></div>
-        </div>
-        <div class="skill">
-          <div class="skill-top"><span>JavaScript</span><span class="pct">72%</span></div>
-          <div class="bar"><i data-w="72"></i></div>
-        </div>
-        <div class="skill">
-          <div class="skill-top"><span>Java (OOP)</span><span class="pct">70%</span></div>
-          <div class="bar"><i data-w="70"></i></div>
-        </div>
-      </div>
-
-      <div class="reveal d2">
-        <div class="skill">
-          <div class="skill-top"><span>Python</span><span class="pct">68%</span></div>
-          <div class="bar"><i data-w="68"></i></div>
-        </div>
-        <div class="skill">
-          <div class="skill-top"><span>Cơ sở dữ liệu / SQL</span><span class="pct">72%</span></div>
-          <div class="bar"><i data-w="72"></i></div>
-        </div>
-        <div class="skill">
-          <div class="skill-top"><span>Linux &amp; Command Line</span><span class="pct">78%</span></div>
-          <div class="bar"><i data-w="78"></i></div>
-        </div>
-        <div class="skill">
-          <div class="skill-top"><span>Git / GitHub</span><span class="pct">75%</span></div>
-          <div class="bar"><i data-w="75"></i></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="reveal d2" style="margin-top:56px">
-      <div class="soft-title">// Kỹ năng mềm</div>
-      <div class="chips">
-        <span class="chip">Tự học &amp; nghiên cứu</span>
-        <span class="chip">Giải quyết vấn đề</span>
-        <span class="chip">Làm việc nhóm</span>
-        <span class="chip">Tư duy logic</span>
-        <span class="chip">Quản lý thời gian</span>
-        <span class="chip">Đọc tài liệu tiếng Anh</span>
-        <span class="chip">Giao tiếp</span>
-        <span class="chip">Kiên trì &amp; chịu áp lực</span>
-      </div>
-    </div>
-
-    <div class="reveal d3" style="margin-top:38px">
-      <div class="soft-title">// Công cụ thường dùng</div>
-      <div class="chips">
-        <span class="chip">Kali Linux</span>
-        <span class="chip">Ubuntu</span>
-        <span class="chip">VS Code</span>
-        <span class="chip">IntelliJ IDEA</span>
-        <span class="chip">MySQL</span>
-        <span class="chip">GitHub</span>
-        <span class="chip">Figma</span>
-        <span class="chip">VirtualBox</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= EDUCATION ================= -->
-<section id="education">
-  <div class="container">
-    <div class="sec-head reveal">
-      <div class="sec-tag">03 — Học vấn</div>
-      <h2>Quá trình <em>học tập</em></h2>
-    </div>
-
-    <div class="timeline">
-      <div class="tl-item reveal d1">
-        <span class="tl-date">2023 — Hiện tại</span>
-        <div class="tl-card">
-          <h3>Sinh viên năm 3 — Công nghệ thông tin</h3>
-          <!-- ✏️ Sửa tên trường của bạn ở dòng dưới -->
-          <div class="place">Trường Đại học</div>
+          <h3>Sinh Viên Giỏi &amp; Xuất Sắc Chuyên Ngành</h3>
+          <span class="org">Khoa Công nghệ thông tin</span>
           <p>
-            Đang theo học chuyên ngành Công nghệ thông tin. Đã hoàn thành các học phần
-            nền tảng: Lập trình cơ bản, Cấu trúc dữ liệu &amp; Giải thuật, Lập trình
-            hướng đối tượng, Cơ sở dữ liệu, Mạng máy tính, Hệ điều hành.
+            Liên tục đạt thành tích học tập cao trong các kỳ học. Hoàn thành xuất sắc các môn cốt lõi: Cấu trúc dữ liệu &amp; Giải thuật, Lập trình hướng đối tượng (OOP), Cơ sở dữ liệu và Hệ điều hành.
           </p>
         </div>
-      </div>
 
-      <div class="tl-item reveal d2">
-        <span class="tl-date">2024 — 2025</span>
-        <div class="tl-card">
-          <h3>Tự học &amp; Thực hành ngoài giờ</h3>
-          <div class="place">Tự học qua dự án cá nhân</div>
+        <!-- Thành tích 2 -->
+        <div class="achievement-card fade-up delay-2">
+          <div class="achieve-header">
+            <div class="achieve-icon" style="color: var(--cyan); border-color: rgba(6, 182, 212, 0.3);">
+              ⚡
+            </div>
+            <span class="achieve-year">2024</span>
+          </div>
+          <h3>Đồ Án Công Nghệ Đạt Điểm Tối Đa</h3>
+          <span class="org">Hệ thống Quản lý Dữ liệu &amp; Ứng dụng</span>
           <p>
-            Tự tìm hiểu về Linux (Kali, Ubuntu), quản lý mã nguồn với Git/GitHub,
-            xây dựng các website nhỏ bằng HTML/CSS/JavaScript và luyện tập
-            giải thuật trên các nền tảng trực tuyến.
+            Xây dựng hoàn chỉnh ứng dụng quản trị dữ liệu quy mô với kiến trúc OOP chuẩn mực, tối ưu hóa câu truy vấn cơ sở dữ liệu và giao diện thân thiện với người dùng.
           </p>
         </div>
+
+        <!-- Thành tích 3 -->
+        <div class="achievement-card fade-up delay-3">
+          <div class="achieve-header">
+            <div class="achieve-icon" style="color: var(--emerald); border-color: rgba(16, 185, 129, 0.3);">
+              🎖️
+            </div>
+            <span class="achieve-year">2024 — Hiện tại</span>
+          </div>
+          <h3>Tự Chủ Môi Trường Linux &amp; DevOps Nền Tảng</h3>
+          <span class="org">Nghiên cứu Mã nguồn mở</span>
+          <p>
+            Thuần thục dòng lệnh Linux (Kali, Ubuntu), tự viết các automation script hỗ trợ công việc và làm chủ quy trình kiểm soát phiên bản mã nguồn chuyên nghiệp với Git/GitHub.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: ĐAM MÊ & TRIẾT LÝ ================= -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="pill-badge">Ngọn Lửa Đam Mê</div>
+        <h2 class="section-title">Triết Lý <span class="gradient-text">Hành Động</span></h2>
+        <p class="section-desc">
+          Công nghệ không chỉ là những dòng code khô khan, mà là công cụ quyền năng nhất để hiện thực hóa ước mơ và giải quyết bài toán cuộc sống.
+        </p>
       </div>
 
-      <div class="tl-item reveal d3">
-        <span class="tl-date">2025 — 2026</span>
-        <div class="tl-card">
-          <h3>Mục tiêu sắp tới</h3>
-          <div class="place">Định hướng nghề nghiệp</div>
+      <div class="passion-grid">
+        <div class="passion-card fade-up delay-1">
+          <div class="p-icon">💡</div>
+          <h3>Đổi Mới &amp; Sáng Tạo</h3>
           <p>
-            Hoàn thành chương trình học năm 3–4 với kết quả tốt, tham gia
-            kỳ thực tập tại doanh nghiệp công nghệ, và tích lũy kinh nghiệm
-            thực tế để trở thành lập trình viên chuyên nghiệp.
+            Không ngại thử nghiệm cái mới. Luôn tìm kiếm giải pháp tối ưu hơn, thông minh hơn thay vì chấp nhận những lối mòn cũ kỹ.
+          </p>
+        </div>
+
+        <div class="passion-card fade-up delay-2">
+          <div class="p-icon">🔥</div>
+          <h3>Say Mê Tự Học</h3>
+          <p>
+            Khả năng tự nghiên cứu tài liệu kỹ thuật, cập nhật công nghệ nhanh chóng và bền bỉ rèn luyện kỹ năng qua từng dự án thực chiến.
+          </p>
+        </div>
+
+        <div class="passion-card fade-up delay-3">
+          <div class="p-icon">🎯</div>
+          <h3>Định Hướng Giá Trị Thực</h3>
+          <p>
+            Mỗi sản phẩm tạo ra đều hướng tới tính ứng dụng cao, hiệu năng vượt trội và mang lại trải nghiệm tốt nhất cho người sử dụng.
           </p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= PROJECTS ================= -->
-<section id="projects">
-  <div class="container">
-    <div class="sec-head reveal">
-      <div class="sec-tag">04 — Dự án</div>
-      <h2>Một số <em>dự án đã làm</em></h2>
-      <p class="sub">
-        Đây là những dự án mình thực hiện trong quá trình học tập và tự học.
-        <!-- ✏️ Bạn có thể thay nội dung bằng dự án thật của mình -->
-      </p>
+  <!-- ================= SECTION: KỸ NĂNG CHUYÊN MÔN ================= -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="pill-badge emerald">Năng Lực Kỹ Thuật</div>
+        <h2 class="section-title">Hệ Sinh Thái <span class="gradient-text">Kỹ Năng</span></h2>
+        <p class="section-desc">
+          Được xây dựng trên nền tảng khoa học máy tính vững chắc và tôi luyện qua hàng ngàn giờ thực hành code thực tế.
+        </p>
+      </div>
+
+      <div class="skills-layout">
+        
+        <!-- Cột 1: Lập trình & Hệ thống -->
+        <div class="skill-category fade-up delay-1">
+          <div class="category-title">
+            <span style="color: var(--cyan);">💻</span> Lập Trình &amp; Hệ Thống
+          </div>
+
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Lập trình C / C++ (Cấu trúc &amp; Giải thuật)</span><span class="percent">85%</span></div>
+            <div class="progress-track"><div class="progress-fill" data-width="85"></div></div>
+          </div>
+
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Java &amp; Lập trình hướng đối tượng (OOP)</span><span class="percent">80%</span></div>
+            <div class="progress-track"><div class="progress-fill" data-width="80"></div></div>
+          </div>
+
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Linux &amp; Shell Scripting (Kali, Ubuntu)</span><span class="percent">82%</span></div>
+            <div class="progress-track"><div class="progress-fill" data-width="82"></div></div>
+          </div>
+
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Cơ sở dữ liệu &amp; SQL (MySQL)</span><span class="percent">78%</span></div>
+            <div class="progress-track"><div class="progress-fill" data-width="78"></div></div>
+          </div>
+        </div>
+
+        <!-- Cột 2: Web & Công cụ hiện đại -->
+        <div class="skill-category fade-up delay-2">
+          <div class="category-title">
+            <span style="color: var(--primary);">🌐</span> Phát Triển Web &amp; Công Cụ
+          </div>
+
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>HTML5, CSS3 &amp; Responsive Web</span><span class="percent">90%</span></div>
+            <div class="progress-track"><div class="progress-fill" data-width="90"></div></div>
+          </div>
+
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>JavaScript Hiện Đại (ES6+)</span><span class="percent">78%</span></div>
+            <div class="progress-track"><div class="progress-fill" data-width="78"></div></div>
+          </div>
+
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Quản lý mã nguồn với Git &amp; GitHub</span><span class="percent">85%</span></div>
+            <div class="progress-track"><div class="progress-fill" data-width="85"></div></div>
+          </div>
+
+          <div class="tag-cloud">
+            <span class="tag-item">Tư duy logic</span>
+            <span class="tag-item">Giải quyết vấn đề</span>
+            <span class="tag-item">Làm việc nhóm</span>
+            <span class="tag-item">Đọc tài liệu tiếng Anh</span>
+            <span class="tag-item">VS Code</span>
+            <span class="tag-item">IntelliJ</span>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <div class="proj-grid">
-      <div class="proj reveal d1">
-        <div class="proj-head">
-          <div class="proj-ico">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ================= SECTION: DỰ ÁN ================= -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="pill-badge">Sản Phẩm Tiêu Biểu</div>
+        <h2 class="section-title">Dự Án <span class="gradient-text">Đã Thực Hiện</span></h2>
+        <p class="section-desc">
+          Các dự án được đầu tư chỉnh chu từ giao diện, logic thuật toán đến trải nghiệm người dùng.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Dự án 1 -->
+        <div class="project-card fade-up delay-1">
+          <div class="project-cover">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="3" width="20" height="14" rx="2"></rect>
               <line x1="8" y1="21" x2="16" y2="21"></line>
               <line x1="12" y1="17" x2="12" y2="21"></line>
             </svg>
           </div>
-          <span class="proj-num">01</span>
+          <div class="project-body">
+            <h3>Website Portfolio Cá Nhân Tương Tác</h3>
+            <p>Trang web cá nhân hiệu năng cao với Canvas animation, chuẩn SEO Google, tối ưu Responsive trên mọi thiết bị.</p>
+            <div class="project-tags">
+              <span>HTML5</span><span>CSS3</span><span>Canvas JS</span><span>SEO</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/vietkien907-svg/nguyenvu" target="_blank" rel="noopener noreferrer" class="link-action">
+                <span>Xem trên GitHub</span> &rarr;
+              </a>
+            </div>
+          </div>
         </div>
-        <h3>Website giới thiệu cá nhân</h3>
-        <p>Trang portfolio responsive xây dựng bằng HTML, CSS và JavaScript thuần, có hiệu ứng cuộn và dark mode.</p>
-        <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-      </div>
 
-      <div class="proj reveal d2">
-        <div class="proj-head">
-          <div class="proj-ico">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Dự án 2 -->
+        <div class="project-card fade-up delay-2">
+          <div class="project-cover" style="background: linear-gradient(135deg, #064e3b, #0f172a);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
               <path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"></path>
               <path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"></path>
             </svg>
           </div>
-          <span class="proj-num">02</span>
+          <div class="project-body">
+            <h3>Hệ Thống Quản Lý Dữ Liệu Sinh Viên</h3>
+            <p>Ứng dụng quản lý hồ sơ, điểm số và tra cứu thông tin theo mô hình lập trình hướng đối tượng OOP và cơ sở dữ liệu quan hệ.</p>
+            <div class="project-tags">
+              <span>Java</span><span>MySQL</span><span>OOP Design</span>
+            </div>
+            <div class="project-footer">
+              <span class="link-action" style="color: var(--emerald);">Đồ Án Xuất Sắc ★</span>
+            </div>
+          </div>
         </div>
-        <h3>Ứng dụng quản lý sinh viên</h3>
-        <p>Bài tập lớn môn Lập trình hướng đối tượng — quản lý thông tin, điểm số sinh viên với Java và MySQL.</p>
-        <div class="proj-tags"><span>Java</span><span>MySQL</span><span>OOP</span></div>
-      </div>
 
-      <div class="proj reveal d3">
-        <div class="proj-head">
-          <div class="proj-ico">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Dự án 3 -->
+        <div class="project-card fade-up delay-3">
+          <div class="project-cover" style="background: linear-gradient(135deg, #4c1d95, #0f172a);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="4 17 10 11 4 5"></polyline>
               <line x1="12" y1="19" x2="20" y2="19"></line>
             </svg>
           </div>
-          <span class="proj-num">03</span>
+          <div class="project-body">
+            <h3>Bộ Script Tự Động Hóa Hệ Thống Linux</h3>
+            <p>Tự động hóa sao lưu dữ liệu, giám sát tài nguyên máy chủ và dọn dẹp hệ thống vận hành trơn tru trên môi trường Linux.</p>
+            <div class="project-tags">
+              <span>Bash</span><span>Linux</span><span>DevOps</span>
+            </div>
+            <div class="project-footer">
+              <span class="link-action" style="color: var(--primary-light);">Tiện ích mã nguồn mở</span>
+            </div>
+          </div>
         </div>
-        <h3>Script tự động hoá trên Linux</h3>
-        <p>Bộ script Bash hỗ trợ sao lưu dữ liệu, dọn dẹp hệ thống và quản lý file, chạy trên Kali Linux.</p>
-        <div class="proj-tags"><span>Bash</span><span>Linux</span><span>Automation</span></div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact">
-  <div class="container">
-    <div class="contact-box reveal">
-      <h2>Hãy <em style="color:var(--green);font-style:normal">kết nối</em> với tôi</h2>
-      <p>
-        Nếu bạn muốn trao đổi về học tập, công nghệ, hoặc có cơ hội hợp tác —
-        đừng ngần ngại gửi cho mình một tin nhắn nhé!
-      </p>
+  <!-- ================= SECTION: LIÊN HỆ ================= -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-banner fade-up">
+        <h2>Sẵn Sàng Cho Những <span class="gradient-text">Cơ Hội Mới</span></h2>
+        <p>
+          Tôi luôn hào hứng tìm kiếm các cơ hội thực tập, dự án thử thách hoặc trao đổi hợp tác công nghệ. Hãy liên hệ với tôi ngay hôm nay!
+        </p>
 
-      <a href="mailto:ngvu265@gmail.com" class="mail-btn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-             stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-          <polyline points="22,6 12,13 2,6"></polyline>
-        </svg>
-        ngvu265@gmail.com
-      </a>
-
-      <div class="socials">
-        <!-- ✏️ Thay "#" bằng link Facebook / GitHub / LinkedIn của bạn -->
-        <a href="#" class="soc" title="Facebook" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-               stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-          </svg>
-        </a>
-        <a href="https://github.com/vietkien907-svg" target="_blank" rel="noopener noreferrer" class="soc" title="GitHub" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-               stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-          </svg>
-        </a>
-        <a href="#" class="soc" title="LinkedIn" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-               stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-            <rect x="2" y="9" width="4" height="12"></rect>
-            <circle cx="4" cy="4" r="2"></circle>
-          </svg>
-        </a>
-        <a href="mailto:ngvu265@gmail.com" class="soc" title="Email" aria-label="Email">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-               stroke-linecap="round" stroke-linejoin="round">
+        <div class="email-container">
+          <svg width="22" height="22" fill="none" stroke="var(--cyan)" stroke-width="2" viewBox="0 0 24 24">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
-        </a>
+          <a href="mailto:ngvu265@gmail.com" class="email-link">ngvu265@gmail.com</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/vietkien907-svg" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="mailto:ngvu265@gmail.com" class="social-btn" title="Email">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-  <div class="f-inner">
-    <span>© <span id="year"></span> <span class="g">Tô Nguyên Vũ</span></span>
-    <span>Chúc bạn một ngày vui <span class="g">✨</span></span>
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div>© <span id="year"></span> <strong>Tô Nguyên Vũ</strong>. Tất cả quyền được bảo lưu.</div>
+      <div>Designed with Passion &amp; Code ✨</div>
+    </div>
+  </footer>
 
-<script>
-/* ================= NĂM TỰ ĐỘNG ================= */
-document.getElementById('year').textContent = new Date().getFullYear();
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+    // 1. Cập nhật năm tự động
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-/* ================= HIỆU ỨNG GÕ CHỮ ================= */
-(function(){
-  const el = document.getElementById('typed');
-  const phrases = [
-    'Sinh viên Công nghệ thông tin — Năm 3',
-    'Đam mê lập trình & công nghệ',
-    'Yêu thích Linux và mã nguồn mở',
-    'Chúc bạn một ngày vui ✨'
-  ];
-  let p = 0, c = 0, deleting = false;
+    // 2. Typing Effect (Hiệu ứng gõ chữ đam mê)
+    const phrases = [
+      "Sinh viên Công nghệ thông tin xuất sắc",
+      "Đam mê lập trình & sáng tạo công nghệ",
+      "Không ngừng học hỏi — Vươn tới đỉnh cao",
+      "Biến dòng code thành những giá trị thực tế"
+    ];
+    let pIdx = 0, cIdx = 0, isDeleting = false;
+    const typedEl = document.getElementById('typed-text');
 
-  function tick(){
-    const txt = phrases[p];
-    if(!deleting){
-      el.textContent = txt.slice(0, ++c);
-      if(c === txt.length){
-        deleting = true;
-        return setTimeout(tick, 1900);
+    function typeLoop() {
+      const current = phrases[pIdx];
+      if (!isDeleting) {
+        typedEl.textContent = current.slice(0, ++cIdx);
+        if (cIdx === current.length) {
+          isDeleting = true;
+          return setTimeout(typeLoop, 2000);
+        }
+        setTimeout(typeLoop, 50);
+      } else {
+        typedEl.textContent = current.slice(0, --cIdx);
+        if (cIdx === 0) {
+          isDeleting = false;
+          pIdx = (pIdx + 1) % phrases.length;
+          return setTimeout(typeLoop, 350);
+        }
+        setTimeout(typeLoop, 25);
       }
-      setTimeout(tick, 55);
-    } else {
-      el.textContent = txt.slice(0, --c);
-      if(c === 0){
-        deleting = false;
-        p = (p + 1) % phrases.length;
-        return setTimeout(tick, 350);
-      }
-      setTimeout(tick, 28);
     }
-  }
-  setTimeout(tick, 700);
-})();
+    setTimeout(typeLoop, 600);
 
-/* ================= NAVBAR SCROLL ================= */
-const nav = document.getElementById('nav');
-const progress = document.getElementById('progress');
-const links = [...document.querySelectorAll('.nav-links a')];
-const sections = [...document.querySelectorAll('section[id], header[id]')];
+    // 3. Thanh cuộn tiến trình & Navbar chuyển nền
+    const navbar = document.getElementById('navbar');
+    const progressBar = document.getElementById('progress-bar');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      navbar.classList.toggle('scrolled', scrolled > 40);
 
-function onScroll(){
-  const y = window.scrollY;
-  nav.classList.toggle('scrolled', y > 40);
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = maxScroll > 0 ? (scrolled / maxScroll * 100) + '%' : '0%';
+    }, { passive: true });
 
-  const h = document.documentElement.scrollHeight - window.innerHeight;
-  progress.style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
+    // 4. Menu Mobile
+    const burgerBtn = document.getElementById('burgerBtn');
+    const navMenu = document.getElementById('navMenu');
+    burgerBtn.addEventListener('click', () => navMenu.classList.toggle('open'));
+    document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
+      link.addEventListener('click', () => navMenu.classList.remove('open'));
+    });
 
-  let current = '';
-  sections.forEach(s => {
-    if(y >= s.offsetTop - 140) current = s.id;
-  });
-  links.forEach(a => {
-    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-  });
-}
-window.addEventListener('scroll', onScroll, {passive:true});
-onScroll();
-
-/* ================= MENU MOBILE ================= */
-const burger = document.getElementById('burger');
-const navLinks = document.getElementById('navLinks');
-burger.addEventListener('click', () => navLinks.classList.toggle('open'));
-links.forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
-
-/* ================= REVEAL ON SCROLL ================= */
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if(e.isIntersecting){
-      e.target.classList.add('in');
-      io.unobserve(e.target);
-    }
-  });
-}, {threshold:0.12, rootMargin:'0px 0px -50px 0px'});
-
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-/* ================= THANH KỸ NĂNG ================= */
-const skillIO = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if(e.isIntersecting){
-      e.target.querySelectorAll('.bar i').forEach(bar => {
-        setTimeout(() => { bar.style.width = bar.dataset.w + '%'; }, 180);
+    // 5. Hiệu ứng cuộn hiển thị (Fade-up Reveal)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
       });
-      skillIO.unobserve(e.target);
-    }
-  });
-}, {threshold:0.3});
+    }, { threshold: 0.15 });
 
-document.querySelectorAll('.skills-wrap > div').forEach(el => skillIO.observe(el));
-</script>
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // 6. Hiệu ứng đếm số thành tích (Counter Animation)
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = +counter.getAttribute('data-target');
+          let count = 0;
+          const speed = target / 30;
+          const update = () => {
+            count += speed;
+            if (count < target) {
+              counter.textContent = Math.ceil(count);
+              requestAnimationFrame(update);
+            } else {
+              counter.textContent = target;
+            }
+          };
+          update();
+          counterObserver.unobserve(counter);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.counter').forEach(c => counterObserver.observe(c));
+
+    // 7. Hiệu ứng chạy thanh phần trăm kỹ năng
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.progress-fill').forEach(bar => {
+            bar.style.width = bar.getAttribute('data-width') + '%';
+          });
+          skillObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.25 });
+
+    document.querySelectorAll('.skill-category').forEach(sec => skillObserver.observe(sec));
+
+    // 8. Interactive Particle Canvas Background (Mạng lưới hạt tương tác theo chuột)
+    const canvas = document.getElementById('particle-canvas');
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    let particles = [];
+
+    function resizeCanvas() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.vx = (Math.random() - 0.5) * 0.8;
+        this.vy = (Math.random() - 0.5) * 0.8;
+        this.radius = Math.random() * 2 + 1;
+        this.color = Math.random() > 0.5 ? 'rgba(99, 102, 241,' : 'rgba(6, 182, 212,';
+        this.alpha = Math.random() * 0.4 + 0.15;
+      }
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        if (this.x < 0 || this.x > width) this.vx *= -1;
+        if (this.y < 0 || this.y > height) this.vy *= -1;
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = this.color + this.alpha + ')';
+        ctx.fill();
+      }
+    }
+
+    const count = Math.min(Math.floor(window.innerWidth / 20), 65);
+    for (let i = 0; i < count; i++) {
+      particles.push(new Particle());
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, width, height);
+      for (let i = 0; i < particles.length; i++) {
+        particles[i].update();
+        particles[i].draw();
+
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 110) {
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(99, 102, 241, ${0.15 * (1 - dist / 110)})`;
+            ctx.lineWidth = 0.8;
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+  </script>
 </body>
 </html>
