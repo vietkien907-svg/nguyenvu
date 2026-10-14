@@ -1221,9 +1221,13 @@
                         Chào bạn! Mình là Tô Nguyên Vũ. Cảm ơn bạn đã ghé thăm iPhone của mình! Bạn cần trao đổi gì cứ nhập bên dưới nhé! 😊
                       </div>
                     <div class="chat-suggestions">
-                      <button class="chip-btn" onclick="quickSend('Chào bạn, mình rất ấn tượng với portfolio này! 👋')">👋 Chào Vũ</button>
+                      <button class="chip-btn" onclick="quickSend('Chào Vũ! Bạn giới thiệu một chút về bản thân nhé? 👋')">👋 Giới thiệu</button>
+                      <button class="chip-btn" onclick="quickSend('Vũ đang học trường nào và năm mấy rồi?')">🎓 Học vấn</button>
+                      <button class="chip-btn" onclick="quickSend('Thế mạnh kỹ năng lập trình của bạn là gì?')">💻 Kỹ năng</button>
+                      <button class="chip-btn" onclick="quickSend('Dự án nổi bật nhất bạn từng làm là gì?')">🏆 Dự án</button>
                       <button class="chip-btn" onclick="quickSend('Vũ có đang tìm kiếm cơ hội thực tập hay việc làm không?')">💼 Thực tập</button>
-                      <button class="chip-btn" onclick="quickSend('Dự án tâm đắc nhất của bạn là gì?')">🏆 Dự án</button>
+                      <button class="chip-btn" onclick="quickSend('Tại sao bạn lại yêu thích Linux?')">🐧 Sở thích Linux</button>
+                      <button class="chip-btn" onclick="quickSend('Làm sao để liên hệ trực tiếp với bạn?')">📱 Liên hệ</button>
                     </div>
                     <div class="imessage-input-bar">
                       <input type="text" id="msgInput" class="imessage-input" placeholder="Gửi tin nhắn..." onkeydown="if(event.key==='Enter') sendChatMessage()">
@@ -1813,28 +1817,84 @@
         console.log(e);
       }
 
-      // 4. PHẢN HỒI THÔNG MINH TỰ ĐỘNG THEO NGỮ CẢNH
+      // 4. PHẢN HỒI THÔNG MINH TOÀN DIỆN MỌI CÂU HỎI
       setTimeout(() => {
         const indicator = document.getElementById('typingIndicator');
         if (indicator) indicator.remove();
 
-        const lower = text.toLowerCase();
+        const lower = text.toLowerCase().trim();
         let reply = "";
 
-        if (lower.includes("chào") || lower.includes("hello") || lower.includes("hi")) {
-          reply = "Chào bạn! Tin nhắn của bạn vừa được gửi thẳng tới điện thoại của Vũ rồi nhé! Bạn muốn tìm hiểu về dự án, học tập hay trao đổi công việc nè? 😊";
-        } else if (lower.includes("thực tập") || lower.includes("việc") || lower.includes("tuyển") || lower.includes("job") || lower.includes("cv")) {
-          reply = "Vũ rất sẵn sàng đón nhận cơ hội thực tập & cộng tác! Điện thoại mình vừa nhận được tin của bạn. Bạn để lại Email hoặc SĐT ở đây để mình gửi CV nhé! 💼";
-        } else if (lower.includes("dự án") || lower.includes("project") || lower.includes("sản phẩm") || lower.includes("web")) {
-          reply = "Vũ đã hoàn thành nhiều dự án Web, OOP Java và Script Linux. Thông báo đã bay về điện thoại Vũ rồi! Bạn có thể lướt xuống mục 'Dự án' để xem chi tiết nhé! 🚀";
-        } else if (lower.includes("kỹ năng") || lower.includes("ngành") || lower.includes("trường") || lower.includes("học")) {
-          reply = "Mình là sinh viên năm 3 CNTT, thế mạnh là C/C++, Java OOP, Linux và Web. Tin nhắn của bạn Vũ đã nhận được trên điện thoại rồi nha! 💻";
-        } else if (lower.includes("@") || lower.includes("0") || lower.includes("sđt") || lower.includes("phone") || lower.includes("zalo") || lower.includes("mail")) {
-          reply = "Tuyệt vời! Vũ đã lưu lại thông tin liên hệ này trên điện thoại rồi. Mình sẽ chủ động liên hệ lại bạn sớm nhất có thể. Cảm ơn bạn rất nhiều! ✨";
-        } else if (lower.includes("không") || lower.includes("k ") || lower.includes("sao") || lower.includes("được không")) {
-          reply = "Được chứ bạn ơi! Bạn gõ gì ở đây thì điện thoại thật của Vũ đều rung thông báo ngay lập tức đó. Cứ nhắn thoải mái nhé! 😄";
-        } else {
-          reply = "Vũ đã nhận được tin nhắn của bạn trên điện thoại rồi nhé! Nếu muốn mình phản hồi lại, bạn gửi kèm email hoặc số điện thoại tại đây luôn nha! 📬";
+        // Nhóm 1: Chào hỏi & Làm quen
+        if (lower.includes("chào") || lower.includes("hello") || lower.includes("hi") || lower.includes("hey") || lower.includes("alo") || lower.includes("ai đó") || lower.includes("ai đây") || lower.includes("whoami") || lower.includes("bạn là ai") || lower.includes("tên gì") || lower.includes("giới thiệu")) {
+          reply = "Chào bạn! Mình là Tô Nguyên Vũ, hiện là sinh viên năm 3 ngành Công nghệ thông tin. Rất vui được đón tiếp bạn ghé thăm portfolio của mình! Bạn cần tìm hiểu thêm thông tin gì về mình nè? 😊";
+        }
+        // Nhóm 2: Trường học & Học vấn
+        else if (lower.includes("trường") || lower.includes("đại học") || lower.includes("năm mấy") || lower.includes("học vấn") || lower.includes("ngành") || lower.includes("khoa") || lower.includes("khi nào ra trường") || lower.includes("gpa") || lower.includes("học bổng") || lower.includes("điểm")) {
+          reply = "Mình hiện là sinh viên năm 3 chuyên ngành Công nghệ thông tin. Trong quá trình học, mình luôn duy trì thành tích tốt ở các môn chuyên ngành cốt lõi như Cấu trúc dữ liệu & Giải thuật, OOP, Cơ sở dữ liệu và Hệ điều hành! 🎓";
+        }
+        // Nhóm 3: Kỹ năng công nghệ & Ngôn ngữ lập trình
+        else if (lower.includes("kỹ năng") || lower.includes("ngôn ngữ") || lower.includes("chuyên môn") || lower.includes("skill") || lower.includes("stack") || lower.includes("công nghệ")) {
+          reply = "Thế mạnh kỹ thuật của mình gồm: C/C++, Java (OOP), Linux & Bash script, HTML5/CSS3/JavaScript hiện đại, và cơ sở dữ liệu MySQL. Ngoài ra mình rất thích tìm hiểu về tối ưu hệ thống và văn hóa DevOps! 💻";
+        }
+        else if (lower.includes("c++") || lower.includes("c/c++") || lower.includes("ngôn ngữ c")) {
+          reply = "Với C/C++, mình nắm vững tư duy cấu trúc dữ liệu, giải thuật, con trỏ và tối ưu hóa bộ nhớ chương trình! ⚡";
+        }
+        else if (lower.includes("java") || lower.includes("oop")) {
+          reply = "Với Java, mình thành thạo mô hình lập trình hướng đối tượng (OOP: Encapsulation, Inheritance, Polymorphism, Abstraction) và thiết kế ứng dụng quản lý liên kết cơ sở dữ liệu! ☕";
+        }
+        else if (lower.includes("linux") || lower.includes("kali") || lower.includes("ubuntu") || lower.includes("bash") || lower.includes("hệ điều hành")) {
+          reply = "Linux là môi trường làm việc yêu thích nhất của mình! Mình thành thạo dòng lệnh Terminal, viết script tự động hóa Bash, phân quyền và quản trị hệ thống trên cả Kali Linux & Ubuntu. 🐉";
+        }
+        else if (lower.includes("tiếng anh") || lower.includes("english") || lower.includes("ielts") || lower.includes("toeic")) {
+          reply = "Khả năng tiếng Anh của mình khá tốt: mình có thể đọc hiểu trôi chảy các tài liệu kỹ thuật, nghiên cứu thư viện mã nguồn mở và giao tiếp làm việc cơ bản! 🌐";
+        }
+        // Nhóm 4: Tuyển dụng, Thực tập, CV
+        else if (lower.includes("thực tập") || lower.includes("intern") || lower.includes("tuyển dụng") || lower.includes("tuyển") || lower.includes("tìm việc") || lower.includes("job") || lower.includes("việc làm") || lower.includes("vị trí") || lower.includes("fulltime") || lower.includes("parttime") || lower.includes("remote")) {
+          reply = "Vũ đang rất sẵn sàng đón nhận cơ hội thực tập và làm việc trong lĩnh vực Phát triển phần mềm / DevOps! Thông báo đã gửi về điện thoại mình. Bạn có thể để lại Email/SĐT ở đây để mình gửi CV chi tiết nhé! 💼";
+        }
+        else if (lower.includes("cv") || lower.includes("resume") || lower.includes("hồ sơ")) {
+          reply = "Bạn có thể gửi email trực tiếp tới ngvu265@gmail.com, hoặc để lại email tại đây. Mình sẽ gửi ngay bản CV (PDF) cập nhật đầy đủ nhất cho bạn! 📄";
+        }
+        // Nhóm 5: Dự án & Sản phẩm
+        else if (lower.includes("dự án") || lower.includes("project") || lower.includes("sản phẩm") || lower.includes("làm được gì") || lower.includes("demo") || lower.includes("code ở đâu") || lower.includes("github")) {
+          reply = "Vũ đã hoàn thành nhiều dự án: 1. Trang web tương tác iPhone 16 Pro với Canvas animation; 2. Phần mềm quản lý sinh viên bằng Java OOP & MySQL; 3. Bộ công cụ tự động hóa Linux bằng Bash script. Bạn có thể lướt xuống mục 'Dự án' trên trang để xem chi tiết nhé! 🚀";
+        }
+        // Nhóm 6: Định hướng, Đam mê & Sở thích
+        else if (lower.includes("định hướng") || lower.includes("mục tiêu") || lower.includes("tương lai") || lower.includes("ước mơ") || lower.includes("sau này")) {
+          reply = "Mục tiêu của Vũ là trở thành một Kỹ sư phần mềm vững chuyên môn, làm chủ các hệ thống phân tán quy mô lớn và đóng góp cho cộng đồng công nghệ mã nguồn mở! 🌟";
+        }
+        else if (lower.includes("sở thích") || lower.includes("rảnh") || lower.includes("làm gì khi rảnh") || lower.includes("thích gì")) {
+          reply = "Ngoài giờ ngồi code, mình rất thích khám phá các bản phân phối Linux mới, nghe nhạc Lo-fi thư giãn và rèn luyện thể thao để duy trì năng lượng tích cực! 🎧";
+        }
+        // Nhóm 7: Số điện thoại / Email do khách để lại
+        else if (lower.includes("@") || lower.includes("03") || lower.includes("05") || lower.includes("07") || lower.includes("08") || lower.includes("09") || lower.includes("sđt") || lower.includes("phone") || lower.includes("zalo")) {
+          reply = "Tuyệt vời! Vũ đã ghi nhận thông tin liên hệ của bạn và điện thoại mình đã rung nhận tin rồi. Mình sẽ chủ động nhắn lại bạn sớm nhất có thể. Cảm ơn bạn rất nhiều! ✨";
+        }
+        // Nhóm 8: Thông tin liên hệ chung
+        else if (lower.includes("liên hệ") || lower.includes("contact") || lower.includes("email") || lower.includes("gmail") || lower.includes("facebook") || lower.includes("fb") || lower.includes("linkedin")) {
+          reply = "Bạn có thể liên hệ trực tiếp với mình qua: Email ngvu265@gmail.com, hoặc xem các dự án trên GitHub: github.com/vietkien907-svg. Bạn cũng có thể nhắn thẳng qua đây, điện thoại mình nhận được ngay lập tức! 📱";
+        }
+        // Nhóm 9: Tương tác tính năng iPhone (Nhạc, Game)
+        else if (lower.includes("nhạc") || lower.includes("bài hát") || lower.includes("music") || lower.includes("lofi") || lower.includes("lo-fi")) {
+          reply = "Bạn có thể bấm vào icon 'Nghe nhạc' trên màn hình chiếc iPhone này để chill cùng đĩa than xoay và điệu nhạc do Web Audio Synth phát ra nhé! 🎵";
+        }
+        else if (lower.includes("game") || lower.includes("flappy") || lower.includes("chơi game") || lower.includes("trò chơi")) {
+          reply = "Hãy bấm vào app 'Flappy Vũ' trên chiếc iPhone này để chơi thử tựa game mini né chướng ngại vật ngay trên màn hình nhé, xem bạn được bao nhiêu điểm! 🎮";
+        }
+        // Nhóm 10: Khen ngợi & Đùa vui
+        else if (lower.includes("đẹp") || lower.includes("khen") || lower.includes("giỏi") || lower.includes("đỉnh") || lower.includes("chất") || lower.includes("xịn") || lower.includes("ấn tượng") || lower.includes("thích")) {
+          reply = "Cảm ơn bạn rất nhiều vì lời khen ngọt ngào! Mình đã đầu tư rất nhiều công sức vào từng dòng code và chi tiết trên trang web này. Chúc bạn một ngày ngập tràn niềm vui! 🥰";
+        }
+        else if (lower.includes("tạm biệt") || lower.includes("bye") || lower.includes("cảm ơn") || lower.includes("thanks")) {
+          reply = "Cảm ơn bạn đã ghé thăm portfolio của Vũ! Chúc bạn mọi điều thuận lợi và hẹn gặp lại bạn trong thời gian tới nhé! 👋✨";
+        }
+        else if (lower.includes("không") || lower.includes("k ") || lower.includes("sao") || lower.includes("được không") || lower.includes("haha") || lower.includes("hehe")) {
+          reply = "Được chứ bạn ơi! Mọi tin nhắn bạn gửi ở đây thì điện thoại thật của Vũ đều rung thông báo nhận được ngay tức thì đó. Bạn cứ nhắn tự nhiên nhé! 😄";
+        }
+        // Fallback: Mọi câu hỏi khác
+        else {
+          reply = "Vũ đã nhận được tin nhắn của bạn trên điện thoại rồi nhé! Nếu muốn mình phản hồi chi tiết hơn, bạn hãy để lại email hoặc số điện thoại tại đây nha! 📬";
         }
 
         const inBubble = document.createElement('div');
