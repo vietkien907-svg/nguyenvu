@@ -694,6 +694,30 @@
       color: #fff;
       border-bottom-right-radius: 4px;
     }
+    .chat-suggestions {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding: 6px 0;
+      margin-bottom: 2px;
+    }
+    .chat-suggestions::-webkit-scrollbar { display: none; }
+    .chip-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #cbd5e1;
+      font-size: 0.68rem;
+      padding: 4px 10px;
+      border-radius: 100px;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .chip-btn:hover {
+      background: var(--cyan);
+      color: #000;
+      border-color: var(--cyan);
+    }
     .imessage-input-bar {
       display: flex;
       gap: 6px;
@@ -1196,6 +1220,10 @@
                       <div class="chat-bubble in">
                         Chào bạn! Mình là Tô Nguyên Vũ. Cảm ơn bạn đã ghé thăm iPhone của mình! Bạn cần trao đổi gì cứ nhập bên dưới nhé! 😊
                       </div>
+                    <div class="chat-suggestions">
+                      <button class="chip-btn" onclick="quickSend('Chào bạn, mình rất ấn tượng với portfolio này! 👋')">👋 Chào Vũ</button>
+                      <button class="chip-btn" onclick="quickSend('Vũ có đang tìm kiếm cơ hội thực tập hay việc làm không?')">💼 Thực tập</button>
+                      <button class="chip-btn" onclick="quickSend('Dự án tâm đắc nhất của bạn là gì?')">🏆 Dự án</button>
                     </div>
                     <div class="imessage-input-bar">
                       <input type="text" id="msgInput" class="imessage-input" placeholder="Gửi tin nhắn..." onkeydown="if(event.key==='Enter') sendChatMessage()">
@@ -1734,15 +1762,22 @@
       dynamicIsland.classList.toggle('expanded');
     });
 
-    // iMessage Simulation Logic
-    function sendChatMessage() {
+    // iMessage Simulation & Direct Notification to Phone via Web3Forms
+    const WEB3FORMS_KEY = "86b80b2d-5332-4c32-be73-48941599d2f1";
+
+    function quickSend(text) {
+      document.getElementById('msgInput').value = text;
+      sendChatMessage();
+    }
+
+    async function sendChatMessage() {
       const input = document.getElementById('msgInput');
       const text = input.value.trim();
       if (!text) return;
 
       const chat = document.getElementById('chatContainer');
       
-      // Bong bóng tin nhắn đi
+      // 1. Bong bóng tin nhắn người dùng gửi
       const outBubble = document.createElement('div');
       outBubble.className = 'chat-bubble out';
       outBubble.textContent = text;
@@ -1750,14 +1785,64 @@
       input.value = '';
       chat.scrollTop = chat.scrollHeight;
 
-      // Vũ phản hồi tự động sau 800ms
+      // 2. Hiển thị trạng thái đang gửi / đang gõ
+      const typingBubble = document.createElement('div');
+      typingBubble.className = 'chat-bubble in';
+      typingBubble.id = 'typingIndicator';
+      typingBubble.innerHTML = '<span style="opacity:0.75">Đang gửi tới điện thoại Vũ... 📱</span>';
+      chat.appendChild(typingBubble);
+      chat.scrollTop = chat.scrollHeight;
+
+      // 3. GỬI TIN NHẮN THẲNG VỀ GMAIL / ĐIỆN THOẠI CỦA VŨ
+      try {
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            access_key: WEB3FORMS_KEY,
+            subject: "🔔 [iPhone Portfolio] Tin nhắn mới từ khách xem web!",
+            from_name: "Khách xem iPhone Portfolio",
+            message: text,
+            sent_at: new Date().toLocaleString('vi-VN')
+          })
+        }).catch(err => console.log("Gửi thông báo:", err));
+      } catch (e) {
+        console.log(e);
+      }
+
+      // 4. PHẢN HỒI THÔNG MINH TỰ ĐỘNG THEO NGỮ CẢNH
       setTimeout(() => {
+        const indicator = document.getElementById('typingIndicator');
+        if (indicator) indicator.remove();
+
+        const lower = text.toLowerCase();
+        let reply = "";
+
+        if (lower.includes("chào") || lower.includes("hello") || lower.includes("hi")) {
+          reply = "Chào bạn! Tin nhắn của bạn vừa được gửi thẳng tới điện thoại của Vũ rồi nhé! Bạn muốn tìm hiểu về dự án, học tập hay trao đổi công việc nè? 😊";
+        } else if (lower.includes("thực tập") || lower.includes("việc") || lower.includes("tuyển") || lower.includes("job") || lower.includes("cv")) {
+          reply = "Vũ rất sẵn sàng đón nhận cơ hội thực tập & cộng tác! Điện thoại mình vừa nhận được tin của bạn. Bạn để lại Email hoặc SĐT ở đây để mình gửi CV nhé! 💼";
+        } else if (lower.includes("dự án") || lower.includes("project") || lower.includes("sản phẩm") || lower.includes("web")) {
+          reply = "Vũ đã hoàn thành nhiều dự án Web, OOP Java và Script Linux. Thông báo đã bay về điện thoại Vũ rồi! Bạn có thể lướt xuống mục 'Dự án' để xem chi tiết nhé! 🚀";
+        } else if (lower.includes("kỹ năng") || lower.includes("ngành") || lower.includes("trường") || lower.includes("học")) {
+          reply = "Mình là sinh viên năm 3 CNTT, thế mạnh là C/C++, Java OOP, Linux và Web. Tin nhắn của bạn Vũ đã nhận được trên điện thoại rồi nha! 💻";
+        } else if (lower.includes("@") || lower.includes("0") || lower.includes("sđt") || lower.includes("phone") || lower.includes("zalo") || lower.includes("mail")) {
+          reply = "Tuyệt vời! Vũ đã lưu lại thông tin liên hệ này trên điện thoại rồi. Mình sẽ chủ động liên hệ lại bạn sớm nhất có thể. Cảm ơn bạn rất nhiều! ✨";
+        } else if (lower.includes("không") || lower.includes("k ") || lower.includes("sao") || lower.includes("được không")) {
+          reply = "Được chứ bạn ơi! Bạn gõ gì ở đây thì điện thoại thật của Vũ đều rung thông báo ngay lập tức đó. Cứ nhắn thoải mái nhé! 😄";
+        } else {
+          reply = "Vũ đã nhận được tin nhắn của bạn trên điện thoại rồi nhé! Nếu muốn mình phản hồi lại, bạn gửi kèm email hoặc số điện thoại tại đây luôn nha! 📬";
+        }
+
         const inBubble = document.createElement('div');
         inBubble.className = 'chat-bubble in';
-        inBubble.textContent = "Cảm ơn bạn! Hãy gửi email tới ngvu265@gmail.com để mình kết nối và phản hồi nhanh nhất nhé! 🚀";
+        inBubble.textContent = reply;
         chat.appendChild(inBubble);
         chat.scrollTop = chat.scrollHeight;
-      }, 800);
+      }, 850);
     }
 
     // Music Player with Web Audio API Synth (Không cần file mp3 ngoài)
